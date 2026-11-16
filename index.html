@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags for Charset and Responsive Design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Mastering Data Science and Web Development | Academic Resource Guide</title>
+    <meta name="description" content="A comprehensive, accessible guide on modern web development, data science basics, algorithms, and practical programming best practices.">
+    <meta name="keywords" content="Data Science, Web Development, Bootstrap, Python, Accessibility, SEO Optimization">
+    <meta name="author" content="Harsh Kumar">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (OG) Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Mastering Data Science and Web Development | Academic Resource Guide">
+    <meta property="og:description" content="A comprehensive, accessible guide on modern web development and data science fundamentals.">
+    <meta property="og:type" content="article">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-- Semantic Header & Navigation -->
+    <header class="border-bottom bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container" aria-label="Main Navigation">
+            <a class="navbar-brand fw-bold text-primary" href="#mainContent">EduTech Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#seoNavbar" aria-controls="seoNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="seoNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#intro">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#best-practices">Best Practices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#key-takeaways">Key Takeaways</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area with Semantic Landmark -->
+    <main id="mainContent" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <!-- Semantic Article -->
+                <article>
+                    <!-- Header with H1 (Single H1 per page for SEO) -->
+                    <header class="mb-4">
+                        <h1 class="display-5 fw-bold text-dark">Building Fast, Accessible, and Search-Optimized Web Applications</h1>
+                        <p class="text-muted">
+                            Published on <time datetime="2026-11-16">November 16, 2026</time> | By <span class="fw-semibold">Harsh Kumar</span>
+                        </p>
+                    </header>
+
+                    <!-- Section 1: Introduction -->
+                    <section id="intro" class="mb-5" aria-labelledby="introHeading">
+                        <h2 id="introHeading" class="h3 fw-semibold text-primary border-bottom pb-2">1. Understanding Semantic HTML and Accessibility (a11y)</h2>
+                        <p class="lead text-secondary">
+                            Semantic HTML introduces meaningful tags to describe the layout and content structure accurately to both browsers and assistive screen reader technologies.
+                        </p>
+                        <p>
+                            Writing accessible code ensures that individuals with diverse vision, motor, hearing, or cognitive abilities can smoothly navigate and interact with web content. By leveraging elements such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>, developers communicate a logical landmark hierarchy.
+                        </p>
+                        <figure class="my-4 text-center">
+                            <div class="p-4 bg-light rounded border text-muted">
+                                <i class="bi bi-universal-access fs-1 text-primary d-block mb-2" aria-hidden="true"></i>
+                                <strong>Accessibility (a11y) Hierarchy Workflow</strong>
+                            </div>
+                            <figcaption class="text-muted small mt-2">Figure 1: Highlighting the structural flow from headings to landmark containers.</figcaption>
+                        </figure>
+                    </section>
+
+                    <!-- Section 2: Best Practices -->
+                    <section id="best-practices" class="mb-5" aria-labelledby="practicesHeading">
+                        <h2 id="practicesHeading" class="h3 fw-semibold text-primary border-bottom pb-2">2. Key Techniques for Search Engine Optimization (SEO)</h2>
+                        <p>
+                            Search Engine Optimization boosts discoverability by adhering to standard indexing guidelines:
+                        </p>
+
+                        <div class="row g-3 my-3">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 bg-light p-3">
+                                    <h3 class="h5 fw-bold text-dark"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Proper Heading Hierarchy</h3>
+                                    <p class="small text-muted mb-0">Use one single &lt;h1&gt; per page and nest subsequent topics logically using &lt;h2&gt; through &lt;h6&gt; without skipping levels.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 bg-light p-3">
+                                    <h3 class="h5 fw-bold text-dark"><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Descriptive Meta & Alt Tags</h3>
+                                    <p class="small text-muted mb-0">Provide accurate meta descriptions for search results and descriptive alt text for every visual element.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accessible Form Example -->
+                        <div class="card p-4 border shadow-sm my-4">
+                            <h3 class="h5 fw-bold mb-3">Newsletter Subscription (Accessible Form Pattern)</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="subscriberEmail" class="form-label">Email Address <span class="text-danger" aria-hidden="true">*</span></label>
+                                    <input type="email" class="form-control" id="subscriberEmail" aria-describedby="emailHelp" placeholder="name@domain.com" required>
+                                    <div id="emailHelp" class="form-text">We will never share your email with third parties.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary" aria-label="Subscribe to the Tech Newsletter">Subscribe</button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <!-- Section 3: Key Takeaways -->
+                    <section id="key-takeaways" class="mb-5" aria-labelledby="takeawaysHeading">
+                        <h2 id="takeawaysHeading" class="h3 fw-semibold text-primary border-bottom pb-2">3. Summary & Takeaways</h2>
+                        <ul class="list-group list-group-numbered">
+                            <li class="list-group-item border-0">Always supply a meaningful title and meta description tag in the <code>&lt;head&gt;</code>.</li>
+                            <li class="list-group-item border-0">Ensure interactive buttons and links contain accessible names or ARIA labels.</li>
+                            <li class="list-group-item border-0">Maintain high color contrast ratios (WCAG AA compliance) across text and backgrounds.</li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">Semantic & Accessible Web Project &copy; 2026 Harsh Kumar.</p>
+            <nav aria-label="Footer Quick Links">
+                <ul class="list-inline mb-0 small">
+                    <li class="list-inline-item"><a href="#intro" class="text-white-50 text-decoration-none">Intro</a></li>
+                    <li class="list-inline-item">&bull;</li>
+                    <li class="list-inline-item"><a href="#best-practices" class="text-white-50 text-decoration-none">Best Practices</a></li>
+                    <li class="list-inline-item">&bull;</li>
+                    <li class="list-inline-item"><a href="#key-takeaways" class="text-white-50 text-decoration-none">Takeaways</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
